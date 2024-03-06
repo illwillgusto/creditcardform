@@ -9,7 +9,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 </head>
 <body>
+    <div class="wrapper" id="app">
+        <div class="card-form">
+            <div class="card-list">
+                <div class="card-item" v-bind:class="{ '-active' : isCardFlipped}">
+                    <div class="card-item__side -front">
+                        <div class="card-item__focus" v-bind:class="{'-active' : focusElementStyle}" v-bind:style="focusElementStyle" ref="focusElement"></div>
+                        <div class="card-item__cover">
 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
