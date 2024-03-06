@@ -28,6 +28,17 @@
                                     </transition>
                                 </div>
                             </div>
+                            <label for="cardNumber" class="card-item__number" ref="cardNumber">
+                                <template v-if="getCardType === 'amex'">
+                                    <span v-for="(n, $index) in amexCardMask" :key="$index">
+                                        <transition name="slide-fade-up">
+                                            <div>
+                                                
+                                            </div>
+                                        </transition>
+                                    </span>
+                                </template>
+                            </label>
                         </div>
                     </div>
                 </div>
